@@ -1,0 +1,11 @@
+{
+    "CLIENT_TOKEN": "NzI1NTU4MTY5MDMxNTQwODE2.XvjzjQ.t2FTjz4rCPcrwUfl89VCdUHfHk0",
+    "CLIENT_ID": "725558169031540816",
+    "AUTHORIZED": [""],
+    "PREFIX": "?",
+    "CLIENT_SECRET": "6RUOIF7rnLFHxYemXiHnk508YA_QO_6Y",
+    "PORT": 3000,
+    "CLIENT_REDIRECT": "/auth/redirect",
+    "WEB": "http://localhost:3000",
+    "MONGO_URL": "mongodb+srv://jean:1065126331@cluster0-qe6ou.mongodb.net/conscience?retryWrites=true&w=majority"
+}

@@ -1,0 +1,31 @@
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<div className="menu">
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg" style="-webkit-box-shadow: 0px 5px 5px -4px rgba(110,110,110,1); -moz-box-shadow: 0px 5px 5px -4px rgba(110,110,110,1); box-shadow: 0px 5px 5px -4px rgba(110,110,110,1);">
+            <a class="navbar-brand" style="font-weight: 500; background: linear-gradient(69deg, rgb(89, 189, 255) 0%, rgb(57, 41, 128) 100%); -webkit-text-fill-color: transparent; -webkit-background-clip: text; font-family: 'Press Start 2P', cursive; margin-top: 5px;">Jean</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 0;">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" style="background: linear-gradient(69deg, rgb(89, 189, 255) 0%, rgb(93, 74, 179) 100%); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/documentation" style="background: linear-gradient(69deg, rgb(89, 189, 255) 0%, rgb(93, 74, 179) 100%); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">Documentation</a>
+                </li>
+                </ul>
+            </div>
+            <div class="nav navbar-nav navbar-right text-inline">
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-right" aria-labelledby="navbarDropdown" style="position: absolute; border-color: #f6f6f6">
+                    <a class="dropdown-item" href="/user/<%= id %>">Profile</a>
+                    <a class="dropdown-item" href="/token">Token</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/logout" style="color: #ff7373;">Logout</a>
+                    </div>
+                <a href="/auth" style="display: <%= showlogin %>"; background: linear-gradient(69deg, rgb(89, 189, 255) 0%, rgb(93, 74, 179) 100%); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"><i class="fas fa-key"></i> Login</a>
+                <img src="<%= avatar %>" width="50px" height="50" id="menu-session" class="rounded-circle" style="display: <%= show %>; float: right;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </img>
+            </div>
+        </nav>
+</div>

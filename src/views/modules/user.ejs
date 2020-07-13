@@ -1,0 +1,14 @@
+<div class="profile-me" style="text-align: center; margin-top: 10%;">
+    <img src="<%= avatar %>"  width="350px" class="rounded-circle"/>
+    <h1 style="-webkit-background-clip: text; font-size: 38px;">
+        <% if(developer === true) { %>
+            <div style="color: #929292; margin-right: 70px;"><%= username %>#<%= discriminator %><i class="fas fa-check-circle" style="display:inline-block; position: absolute; margin-top: 17px; margin-left: 10px; font-size: 18px;" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Verified" id="brand-me-brand"></i><i class="fas fa-shield-alt" style="display:inline-block; position: absolute; margin-top: 17px; margin-left: 35px; font-size: 18px;" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Staff" id="brand-me-brand"></i><i class="fas fa-terminal" style="display:inline-block; position: absolute; margin-top: 17px; margin-left: 60px; font-size: 18px;" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Developer" id="brand-me-brand"></i></div>
+        <% } else if(staff === true) { %>
+            <div style="color: #929292; margin-right: 40px;"><%= username %>#<%= discriminator %><i class="fas fa-check-circle" style="display:inline-block; position: absolute; margin-top: 17px; color:#747474; margin-left: 10px; font-size: 18px;" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Verified" id="brand-me-brand"></i><i class="fas fa-shield-alt" style="display:inline-block; position: absolute; margin-top: 17px; margin-left: 35px; font-size: 18px;" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Staff" id="brand-me-brand"></i></div>
+        <% } else if(verified === true) { %>
+            <div style="color: #929292; margin-right: 25px;"><%= username %>#<%= discriminator %><i class="fas fa-check-circle" style="display:inline-block; position: absolute; margin-top: 17px; color:#747474; margin-left: 10px; font-size: 18px;" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Verified" id="brand-me-brand"></i></div>
+        <% } else {%>
+            <div style="color: #929292"><%= username %>#<%= discriminator %></div>
+        <% }%>
+    </h1>
+</div>
