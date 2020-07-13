@@ -6,6 +6,6 @@
     "CLIENT_SECRET": "",
     "PORT": 3000,
     "CLIENT_REDIRECT": "/auth/redirect",
-    "WEB": "http://localhost:3000", //all
+    "WEB": "http://localhost:3000",
     "MONGO_URL": ""
 }
