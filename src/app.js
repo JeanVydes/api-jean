@@ -115,8 +115,8 @@ app.get("/user/:id", async function(req, res) {
 
     res.render("user", {
         id: (req.isAuthenticated() ? `${req.user.id}` : ``),
-        username: user.username,
-        avatar: `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=2048`,
+        username: (req.isAuthenticated() ? `${user.username}` : ``),
+        avatar: (req.isAuthenticated() ? `https://cdn.discordapp.com/avatars/${req.user.id}/${req.user.avatar}.png` : null),
         show: (req.isAuthenticated() ? "block" : "none"),
         showlogin: (req.isAuthenticated() ? "none" : "block"),
         flags: user.flags,
