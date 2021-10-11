@@ -19,8 +19,8 @@ router.get("/", async function (req, res) {
 
     let x = await fetch('https://imgur.com/r/cat/hot.json')
     .then(res => res.json())
-    let i = x.data
-    let animal = i[Math.floor(Math.random() * i.length)]
+    x = x.data
+    let animal = x[Math.floor(Math.random() * x.length)]
     res.json({
         id: animal.id,
         image: `https://i.imgur.com/${animal.hash}${animal.ext}/`,
